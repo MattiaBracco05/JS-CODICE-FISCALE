@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- CSS -->
+    <link rel="stylesheet" href="./css/style.css">
+    <!-- BOOTSTRAP -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <!-- JS -->
+    <script src="./js/script.js"></script>
+    <!-- HTML:5 -->
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>3C Bracco Mattia Codice Fiscale</title>
+</head>
+<body>
+    <!-- TITOLO -->
+    <div class="row">
+        <div class="col-12 titolo">TROVA CODICE FISCALE</div>
+    </div>
+
+    <!-- DATI IN INPUT -->
+    <div class="row">
+        <div class="col-12">
+            <form>
+                <!-- NOME -->
+                <div class="row">
+                    <div class="col-12 sottoTitolo">Nome</div>
+                    <div class="col-12 allinea"><input id="nome" placeholder="Inserisci nome" id="nome" class="form-control" required></input></div>
+                </div>
+                <!-- COGNOME -->
+                <div class="row mt-3">
+                   <div class="col-12 sottoTitolo">Cognome</div>
+                   <div class="col-12 allinea"><input id="cognome" placeholder="Inserisci cognome" id="cognome" class="form-control" required></input></div> 
+                </div>
+                <!-- DATA DI NASCITA -->
+                <div class="row mt-3">
+                    <div class="col-12 sottoTitolo">Data di nascita</div>
+                    <div class="col-12 allinea"><input type="date" id="data" required></div>
+                </div>
+                <!-- LUOGO -->
+                <div class="row mt-3">
+                    <div class="col-12 sottoTitolo">Luogo</div>
+                    <div class="col-12 allinea"><input type="text" placeholder="Inserisci città" required id="localita" id="autocomplete" />
+                    </div>
+                </div>
+                <!-- GENERE -->
+                <div class="row mt-3">
+                    <div class="col-12 sottoTitolo">Genere</div>
+                    <div class="col-6 allinea"><input type="radio" id="maschio" name="gender" value="M">Maschio</div>
+                    <div class="col-6 allinea"><input type="radio" id="femmina" name="gender" value="F">Femmina</div>
+                </div>
+                <!--BUTTON  -->
+                <div class="row mt-3">
+                    <div class="col-12 button"><input type="button" value="CALCOLA" id="but" onclick="carica()"></div>
+                </div>
+        </form>
+
+        <!-- DIV DOVE STAMPO IL CODICE -->
+        <div class="row mt-3 sfondoDiv">
+            <div class="col-12"><div id="display"></div></div>
+        </div>
+
+    <!-- QUESTO VA SEMPRE AL FONDO ! -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+</body>
+</html>
